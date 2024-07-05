@@ -1,4 +1,3 @@
-# Stage 1: Build ollama service
 FROM ollama/ollama:latest
 
 RUN apt-get -y update && apt-get -y install ca-certificates curl && apt-get -y clean && rm -rf /var/lib/apt/lists/*
